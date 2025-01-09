@@ -11,10 +11,10 @@ const token = "7654c6f2eb5f6d6b97ff260c58c3a8eef2c3caf83c76ed14a783613542ed17ba"
 // Endpoint to fetch data from the Webflow API
 app.get("/api/webflow-data", async (_req, res) => {
     try {
-        const response = await fetch(apiUrl, {
+        const response = await fetch('https://api.webflow.com/v2/collections/67761a367172d5876d96a947/items/67761b0af9a4fdbc2133c658', {
             method: "GET",
             headers: {
-                "Authorization": `Bearer ${token}`,
+                "Authorization": `Bearer 7654c6f2eb5f6d6b97ff260c58c3a8eef2c3caf83c76ed14a783613542ed17ba`,
                 "Content-Type": "application/json"
             }
         });
