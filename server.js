@@ -1,9 +1,12 @@
 const express = require("express");
 const app = express();
 const PORT = 3000;
+const cors = require('cors');
+
 
 const apiUrl = "https://api.webflow.com/v2/collections/67761a367172d5876d96a947/items/67761b0af9a4fdbc2133c658";
 const token = "7654c6f2eb5f6d6b97ff260c58c3a8eef2c3caf83c76ed14a783613542ed17ba";
+app.use(cors());
 
 // Serve static files from the "public" directory
 // app.use(express.static("public"));
